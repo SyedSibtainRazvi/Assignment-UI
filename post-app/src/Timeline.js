@@ -11,7 +11,7 @@ function Timeline({profilePic, image, userName, timeStamp, message}) {
       <Avatar src={profilePic}  className='post_pic'/>
       <div className='post_data'>
         <h4>{userName}</h4>
-        <p>Time stamp</p>
+        <p>{new Date(timeStamp?.toDate()).toUTCString()}</p>
       </div>
     </div>
     <div className='post_content'>

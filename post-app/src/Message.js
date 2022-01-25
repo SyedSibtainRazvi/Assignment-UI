@@ -10,19 +10,33 @@ import CameraAltIcon from '@material-ui/icons/CameraAlt';
 // import { IconButton } from '@material-ui/core';
 import ArrowDropDownCircleIcon from '@material-ui/icons/ArrowDropDownCircle';
 import LockIcon from '@material-ui/icons/Lock';
+import db from './firebase';
+import firebase from "firebase";
 
 function Message() {
 
-    const[input,setInput] = useState('');
+    const[input,setInput] = useState("");
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        db.collection('posts').add({
+            message: input,
+            timeStamp: firebase.firestore.FieldValue.serverTimestamp(),
+            profilePic: "Syed", 
+            userName: "Syed",
+            image:"Syed"
+
+        })
+        setInput("");
     };
+
 
   return (
     <div className='message_box'>
         <div className='message_top'>
       <form>
-      <AccountCircleIcon style={{fontSize:"40px",position:"absolute", color:"grey"}}/>
+      <AccountCircleIcon 
+      style={{fontSize:"40px",position:"absolute", color:"grey"}}/>
       <input
       value={input} 
       onChange={(e) => setInput(e.target.value)}
