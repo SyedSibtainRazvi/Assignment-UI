@@ -7,7 +7,9 @@ import GifIcon from '@material-ui/icons/Gif';
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import CameraAltIcon from '@material-ui/icons/CameraAlt';
-import { IconButton } from '@material-ui/core';
+// import { IconButton } from '@material-ui/core';
+import ArrowDropDownCircleIcon from '@material-ui/icons/ArrowDropDownCircle';
+import LockIcon from '@material-ui/icons/Lock';
 
 function Message() {
 
@@ -61,10 +63,16 @@ function Message() {
         <h4>Tag Event</h4>
       </div>
       </div>
-
-      <button onClick={handleSubmit} type="submit">
-          Hidden Submit
+        <div className='message_box_submit'>
+        <button>
+          Only Me 
+          <LockIcon  style={{fontSize:"18px"}}/>
       </button>
+      <button className='post_button' onClick={handleSubmit} type="submit">
+          Post
+      </button>
+      </div>
+      
 
   </div>
   )

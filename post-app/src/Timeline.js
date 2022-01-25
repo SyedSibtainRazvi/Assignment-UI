@@ -1,6 +1,8 @@
 import { Avatar } from '@material-ui/core';
 import React from 'react';
-import "./Timeline.css"
+import "./Timeline.css";
+import ThumbUpIcon from '@material-ui/icons/ThumbUp';
+import ReplyIcon from '@material-ui/icons/Reply';
 
 function Timeline({profilePic, image, userName, timeStamp, message}) {
   return (
@@ -17,6 +19,19 @@ function Timeline({profilePic, image, userName, timeStamp, message}) {
     </div>
     <div className='post_image'>
       <img src={image} alt= ""/>
+    </div>
+
+
+    <div className='post_icons'>
+      <div className='post_interaction'>
+        <ThumbUpIcon />
+        <p>Like</p>
+        </div>
+        <div className='post_interaction'>
+        <ReplyIcon />
+        <p>Share</p>
+      </div>
+      
     </div>
 
   </div>
