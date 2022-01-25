@@ -1,0 +1,39 @@
+.timeline {
+    /* width: 100%; */
+    /* display: flex; */
+    /* padding: 0.5rem; */
+    /* justify-content: space-between; */
+    box-shadow: 0px 4px 8px -9px black;
+    background-color:white;
+    width: 30vw;
+    margin: 2rem auto ; 
+    /* justify-content: space-around; */
+}
+
+.posy_image > img{
+    width: 100%;
+    /* margin: 1rem ; */
+}
+
+.post{
+    display: flex;
+    position: relative;
+    padding: 15px;
+    /* align-items: center; */
+}
+
+.post_pic{
+    margin-right: 10px;
+}
+.post_content{
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.post_data > h4{
+font-size: medium;
+}
+
+.post_data > p{
+    color: grey;
+}
