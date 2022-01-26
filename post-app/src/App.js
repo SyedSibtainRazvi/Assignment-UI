@@ -9,6 +9,7 @@ import db from "./firebase";
 
 function App() {
     const [posts, setPosts] = useState([]);
+    // const[openGiphy, setOpenGiphy] = useState(false);
 
     useEffect(() => {
       db.collection('posts').orderBy('timeStamp', 'desc').onSnapshot(snapshot => {
@@ -39,7 +40,7 @@ function App() {
        image={post.data.image}
        />
      ))}
-
+    {/* <Giphy /> */}
     </div>
   );
 }

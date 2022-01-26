@@ -80,7 +80,7 @@
 
     /* flex-direction: column; */
     padding: 0.9rem;
-    background-color:#f7f9fc ;
+    background-color:#f7f9fc;
     border-radius: 12px;
     /* margin-left: 2rem; */
     /* justify-content: space-between; */
@@ -105,4 +105,5 @@
 .post_button:hover{
     background-color:#016dcc;
 }
+
 

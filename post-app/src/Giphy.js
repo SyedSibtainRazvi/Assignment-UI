@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
 import "./Giphy.css";
 
-function Giphy() {
-    const Url = "https://api.giphy.com/v1/gifs/search?api_key=cjEpZ2KsSIsYpddBsNhbjQCwkE6Rv72D&q=help&limit=25&offset=0&rating=g&lang=en"
+function Giphy({}) {
+    
+
+    const Url = "https://api.giphy.com/v1/gifs/search?api_key=cjEpZ2KsSIsYpddBsNhbjQCwkE6Rv72D&q=help&limit=25&offset=0&rating=g&lang=en" 
     const [search, setSearch] = useState("");
     const [gifs, setGifs] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -30,7 +32,8 @@ function Giphy() {
   return (
 
 <div>
-   <div className='header'>
+   <div className='pop_background'>
+   <div className='pop_box_container'>
         <input
             type ="text"
             placeholder='Search Gifs'
@@ -41,15 +44,16 @@ function Giphy() {
         <button onClick={searchGif}>
             Search
         </button>
-    </div>
     <div className='result'>
         <div className='loading'>
             <div className='loader'>
         </div>
+        {/* <button onClick={()=> }> Cancel </button> */}
+        
     </div>
     <div className='list'>
         {
-            gifs.map((gif) => {
+            gifs.slice(0,1).map((gif) => {
                 return (
                     <div className='item'>
                         <img src={gif} />
@@ -57,6 +61,8 @@ function Giphy() {
                 )
             })
         }
+    </div>
+    </div>
     </div>
     </div>
 </div>

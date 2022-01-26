@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import "./Message.css";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import GroupIcon from '@material-ui/icons/Group';
@@ -12,8 +12,28 @@ import CameraAltIcon from '@material-ui/icons/CameraAlt';
 import LockIcon from '@material-ui/icons/Lock';
 import db from './firebase';
 import firebase from "firebase";
+import Giphy from './Giphy';
 
 function Message() {
+
+  const[openGiphy, setOpenGiphy] = useState(false);
+
+  // const toggleModal = () => {
+  //   setOpenGiphy(false)
+  // }
+
+  // useEffect(() => {
+  //   document.addEventListener("mousedown", () => {
+  //     setOpenGiphy(false)
+  //   })
+  // })
+
+  // const closePop = (e) => {
+  //   document.addEventListener("click", () => {
+  //     setOpenGiphy(false)
+  //   })
+  // }
+
 
     const[input,setInput] = useState("");
     const handleSubmit = (e) => {
@@ -29,6 +49,10 @@ function Message() {
         })
         setInput("");
     };
+    // const gifClick = () => {
+    //   console.log("Hello");
+    // }
+
 
 
   return (
@@ -68,9 +92,14 @@ function Message() {
       </div>
 
       <div className='message_box_mid'>
-      <div className='message_box_option'>
-        <GifIcon style={{color:"green"}}/>
+      <div onClick={() => {
+        setOpenGiphy(true)
+      }} 
+      className='message_box_option'>
+        <GifIcon />
         <h4>Gif</h4>
+        {openGiphy && <Giphy />}
+        {/* <button onClick= {post}>post</button> */}
       </div>
       <div className='message_box_option'>
         <CalendarTodayIcon style={{color:"orange"}}/>

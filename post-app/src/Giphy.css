@@ -1,0 +1,31 @@
+.pop_box_container {
+    width: 30vw;
+    height: 40vh;
+    margin: auto;
+    top: 170px;
+    z-index: 1000;
+    right: 50px;
+    background-color:#f7f9fc ;
+    border: 1px solid grey;
+    border-radius: 2px;
+
+    position: relative;
+}
+
+.pop_box_container> input{
+    display: flex;
+    margin: 2px auto;
+
+}
+
+.pop_box_container> button{
+    display: flex;
+    margin: auto;
+}
+
+.item>img {
+    display: flex;
+    margin: auto;
+    padding: 1rem;
+
+}
