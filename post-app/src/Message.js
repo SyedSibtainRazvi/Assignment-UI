@@ -8,7 +8,7 @@ import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import CameraAltIcon from '@material-ui/icons/CameraAlt';
 // import { IconButton } from '@material-ui/core';
-import ArrowDropDownCircleIcon from '@material-ui/icons/ArrowDropDownCircle';
+// import ArrowDropDownCircleIcon from '@material-ui/icons/ArrowDropDownCircle';
 import LockIcon from '@material-ui/icons/Lock';
 import db from './firebase';
 import firebase from "firebase";
@@ -22,9 +22,9 @@ function Message() {
         db.collection('posts').add({
             message: input,
             timeStamp: firebase.firestore.FieldValue.serverTimestamp(),
-            profilePic: "Syed", 
-            userName: "Syed",
-            image:"Syed"
+            profilePic: "", 
+            userName: "Syed Sibtain",
+            image:""
 
         })
         setInput("");

@@ -3,6 +3,7 @@ import './App.css';
 import Header from "./Header";
 import Message from "./Message";
 import Timeline from "./Timeline";
+import Giphy from "./Giphy";
 import db from "./firebase";
 
 
@@ -10,10 +11,12 @@ function App() {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-      db.collection("posts").orderBy('timeStamp', 'desc').onSnapshot((snapshot) =>
-      setPosts(snapshot.docs.map((doc) => ({id: doc.id , data: doc.data()
+      db.collection('posts').orderBy('timeStamp', 'desc').onSnapshot(snapshot => {
+      setPosts(snapshot.docs.map(doc => ({
+        id: doc.id,
+        data: doc.data()
       })))
-      );
+    })
     }, []);
 
   return (
@@ -36,6 +39,7 @@ function App() {
        image={post.data.image}
        />
      ))}
+
     </div>
   );
 }
