@@ -2,43 +2,35 @@
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
-    /* justify-content: space-between; */
     box-shadow: 0px 4px 8px -9px black;
     width: 50vw;
     margin: auto;
-    border:1px solid whitesmoke
-    /* background-color: whitesmoke; */
+    border: 1px solid whitesmoke
 }
 
 .message_top {
     display: flex;
     padding: 15px;
-    /* border-bottom: 1px solid black; */
     height: 10vh;
     margin-bottom: 1rem;
 }
 
 .message_top>form {
-    /* display: flex; */
     flex: 1;
 }
 
 .message_top>form>input {
     outline-width: 0;
-    /* display: flex; */
     border: none;
     padding: 5px 20px;
     width: 40vw;
     font-size: 1rem;
-    /* height: 8vh; */
-    /* margin: 0px 100px 0 0; */
     margin-top: 8px;
     margin-left: 40px;
 }
 
 ::placeholder {
     position: absolute;
-    /* padding: 10px; */
     margin: auto;
     font-size: 1rem;
 }
@@ -46,7 +38,6 @@
 .message_box_mid {
     display: flex;
     justify-content: space-between;
-    /* margin-top: auto; */
     margin: auto 0.5rem;
 
 }
@@ -56,7 +47,6 @@
     margin: 5px;
     padding: 12px;
     align-items: center;
-    /* position: relative; */
     width: 300px;
     height: 18px;
     background-color: #f7f5f5;
@@ -68,42 +58,36 @@
     background-color: rgb(235, 231, 231);
     transition: 0.2s;
 }
-.message_box_option > h4{
+
+.message_box_option>h4 {
     padding: 0px 10px;
     cursor: pointer;
 
 }
-.message_box_submit{
-    display: flex;
-    justify-content:end;
-    /* box-shadow: 0px -4px 5px -8px black; */
 
-    /* flex-direction: column; */
+.message_box_submit {
+    display: flex;
+    justify-content: end;
     padding: 0.9rem;
-    background-color:#f7f9fc;
+    background-color: #f7f9fc;
     border-radius: 12px;
-    /* margin-left: 2rem; */
-    /* justify-content: space-between; */
-    /* box-shadow: 0px 4px 8px -9px black; */
     width: 46vw;
     margin: 1rem auto;
 }
 
-.message_box_submit > button{
+.message_box_submit>button {
     margin: 0 1rem;
     padding: 0 1rem;
     font-size: 1rem;
     border-radius: 2px;
-    /* align-items: center; */
-}
-.post_button{
-    background-color:#0378E1;
-     color:white;
-     border:none;
 }
 
-.post_button:hover{
-    background-color:#016dcc;
+.post_button {
+    background-color: #0378E1;
+    color: white;
+    border: none;
 }
 
-
+.post_button:hover {
+    background-color: #016dcc;
+}

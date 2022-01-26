@@ -5,20 +5,20 @@
     top: 170px;
     z-index: 1000;
     right: 50px;
-    background-color:#f7f9fc ;
+    background-color: #f7f9fc;
     border: 1px solid grey;
     border-radius: 2px;
 
     position: relative;
 }
 
-.pop_box_container> input{
+.pop_box_container>input {
     display: flex;
     margin: 2px auto;
 
 }
 
-.pop_box_container> button{
+.pop_box_container>button {
     display: flex;
     margin: auto;
 }

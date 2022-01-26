@@ -48,7 +48,6 @@ function Giphy({}) {
         <div className='loading'>
             <div className='loader'>
         </div>
-        {/* <button onClick={()=> }> Cancel </button> */}
         
     </div>
     <div className='list'>

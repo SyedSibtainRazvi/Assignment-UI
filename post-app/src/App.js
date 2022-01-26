@@ -23,13 +23,10 @@ function App() {
   return (
     <div className="app">
 
-     {/* Header */}
      <Header />
 
-     {/* App body */}
      <Message />
 
-     {/* Feed */}
      {posts.map((post) => (
        <Timeline
        key={post.id}
@@ -40,7 +37,6 @@ function App() {
        image={post.data.image}
        />
      ))}
-    {/* <Giphy /> */}
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import "./Message.css";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import GroupIcon from '@material-ui/icons/Group';
@@ -99,7 +99,6 @@ function Message() {
         <GifIcon />
         <h4>Gif</h4>
         {openGiphy && <Giphy />}
-        {/* <button onClick= {post}>post</button> */}
       </div>
       <div className='message_box_option'>
         <CalendarTodayIcon style={{color:"orange"}}/>
