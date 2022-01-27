@@ -3,7 +3,7 @@ import './App.css';
 import Header from "./Header";
 import Message from "./Message";
 import Timeline from "./Timeline";
-import Giphy from "./Giphy";
+// import Giphy from "./Giphy";
 import db from "./firebase";
 
 

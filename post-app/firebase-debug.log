@@ -1,0 +1,50 @@
+[debug] [2022-01-27T15:40:59.729Z] ----------------------------------------------------------------------
+[debug] [2022-01-27T15:40:59.731Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\syeds\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-01-27T15:40:59.731Z] CLI Version:   10.1.2
+[debug] [2022-01-27T15:40:59.731Z] Platform:      win32
+[debug] [2022-01-27T15:40:59.731Z] Node Version:  v16.13.2
+[debug] [2022-01-27T15:40:59.732Z] Time:          Thu Jan 27 2022 21:10:59 GMT+0530 (India Standard Time)
+[debug] [2022-01-27T15:40:59.732Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-27T15:40:59.778Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-27T15:40:59.779Z] > authorizing via signed-in user (syedsibtain191@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\syeds\OneDrive\Desktop\Assignment-UI\post-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2022-01-27T15:48:45.232Z] ----------------------------------------------------------------------
+[debug] [2022-01-27T15:48:45.233Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\syeds\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-01-27T15:48:45.234Z] CLI Version:   10.1.2
+[debug] [2022-01-27T15:48:45.234Z] Platform:      win32
+[debug] [2022-01-27T15:48:45.234Z] Node Version:  v16.13.2
+[debug] [2022-01-27T15:48:45.235Z] Time:          Thu Jan 27 2022 21:18:45 GMT+0530 (India Standard Time)
+[debug] [2022-01-27T15:48:45.235Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-27T15:48:45.281Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-27T15:48:45.282Z] > authorizing via signed-in user (syedsibtain191@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\syeds\OneDrive\Desktop\Assignment-UI\post-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
